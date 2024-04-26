@@ -1,3 +1,3 @@
 # danmaku_game_test
 # unity result show
-![mono](https://user-images.githubusercontent.com/41532126/89615069-59c6bc00-d8b8-11ea-8249-adc41985f4ec.gif)
+![mono](https://github.com/F74066307/danmaku_game_test/blob/master/test.gif)
