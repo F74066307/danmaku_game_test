@@ -12,6 +12,7 @@ public class bulletmove : MonoBehaviour {
     public float start,start2, v;
     public float a = 0;
     public int type=0;
+    public float r_limit=0;
     //GameObject launch = GameObject.Find("matsuri");
     public void fly()
     {
@@ -21,7 +22,10 @@ public class bulletmove : MonoBehaviour {
         transform.position +=new Vector3(r*Mathf.Cos(theta), r * Mathf.Sin(theta),0)*Time.deltaTime;
         //theta += Time.deltaTime;
         theta = theta + angle * Mathf.PI / 180;
-        r = r + a;
+        if(r_limit!=0&&r<r_limit){
+            r = r + a;
+        }
+        
     }
 
     public void change_pos(){
@@ -30,6 +34,11 @@ public class bulletmove : MonoBehaviour {
         //theta += Time.deltaTime;
     }
 
+    public void calc_angle(Vector3 player_pos,Vector3 now_pos){
+        float y=-now_pos.y+player_pos.y;
+        float x=-now_pos.x+player_pos.x;
+        theta=Mathf.Atan2(y,x)*180/Mathf.PI;
+    }
     
 
 	void Start () {
@@ -57,10 +66,11 @@ public class bulletmove : MonoBehaviour {
             default:
                 break;
         }
-        if ((transform.position.y>5.5 ||transform.position.y<-5.5)||(transform.position.x>8.8)||transform.position.x<-8.8)
+        if ((transform.position.y>5.5 ||transform.position.y<-5.5)||(transform.position.x>4.8)||(transform.position.x<-8.7))
         {
             Destroy(this.transform.gameObject);
            
         }
 	}
+
 }

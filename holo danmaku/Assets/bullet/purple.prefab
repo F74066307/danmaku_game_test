@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 50454534042949868}
   m_Layer: 0
   m_Name: purple
-  m_TagString: Enemy
+  m_TagString: Enemy_shot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90,9 +90,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   r: 0
+  t: 0
   theta: 0
   angle: 0
   start: 0
+  start2: 0
   v: 0
   a: 0
   type: 0
@@ -130,7 +132,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300014, guid: 79ab01407bf930a419a3d8dace95a2cf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

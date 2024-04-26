@@ -15,12 +15,12 @@ public class wind : MonoBehaviour {
     // Use this for initialization
     void Start () {
 
-        InvokeRepeating("create_wind", starttime, frequency);
-        Invoke("toend",endtime);
+        //InvokeRepeating("create_wind", starttime, frequency);
+        //Invoke("toend",endtime);
         change = 0;
     }
 
-    void create_wind()
+    public void create_wind()
     {
         
         for (int i=0; i<num;i++)
@@ -44,8 +44,8 @@ public class wind : MonoBehaviour {
         change+=3*direct;
         count++;
     }
-
-    void toend() { CancelInvoke("create_wind"); }
+    public void to_start(){InvokeRepeating("create_wind", starttime, frequency);}
+    public void to_end() { CancelInvoke("create_wind"); }
 
 	
 	// Update is called once per frame

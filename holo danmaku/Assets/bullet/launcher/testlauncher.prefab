@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 464a8ba93a9d3e241ab22003998ef09f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletype: {fileID: 1843148989152146, guid: 780659b41c9e2d7459c472268bdff293, type: 2}
+  bulletype: {fileID: 1887487641580034, guid: f2b33889f1037c04f963e5bfe2ce5bcc, type: 2}
   start: 0
   frequency: 5
   ring_num: 5
@@ -210,9 +210,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   r: 2
+  t: 0
   theta: 180
   angle: 0
   start: 0.1
+  start2: 0
   v: 0.1
   a: 0
   type: 0

@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,10 +11,10 @@ public class ring : MonoBehaviour {
     public float a;
 	// Use this for initialization
 	void Start () {
-        InvokeRepeating("ring_attack",start,frequency);
+        //InvokeRepeating("ring_attack",start,frequency);
 	}
 
-    void ring_attack()
+    public void ring_attack()
     {
         for (int i=0;i<ring_num;i++)
         {
@@ -28,7 +28,6 @@ public class ring : MonoBehaviour {
                 b1.GetComponent<bulletmove>().type = 1;
                 b1.GetComponent<bulletmove>().r = 1;
                 b1.GetComponent<bulletmove>().a = a*i;
-
             }
         }
     }

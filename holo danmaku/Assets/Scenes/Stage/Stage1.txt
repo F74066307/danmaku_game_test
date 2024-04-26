@@ -1,0 +1,3 @@
+play 0_0 // 0_0を再生
+wait 1 // 1秒待つ
+enemy enemy1 obj Enemy ex 50 ey 0 hit_s 12 life 5 gr_type 0 w_time 60 bl_pat 0 bl_type 1 bl_col 0

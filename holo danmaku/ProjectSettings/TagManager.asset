@@ -5,6 +5,14 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Shot
+  - FxTemporaire
+  - Enemy_shot
+  - ScoreManager
+  - PlayerManager
+  - EnemyManager
+  - PlayerHeart
+  - PlayerLifeBar
   layers:
   - Default
   - TransparentFX
@@ -15,6 +23,8 @@ TagManager:
   - 
   - 
   - enemy
+  - effect
+  - text
   - 
   - 
   - 
@@ -24,9 +34,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - game_over
   - 
   - 
   - 
@@ -41,4 +49,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: enemy
+    uniqueID: 1493035245
+    locked: 0
+  - name: Player
+    uniqueID: 3405607251
+    locked: 0
+  - name: bullet
+    uniqueID: 2264625959
+    locked: 0
+  - name: effect
+    uniqueID: 3190889173
+    locked: 0
+  - name: border
+    uniqueID: 433007709
+    locked: 0
+  - name: text
+    uniqueID: 4133424625
+    locked: 0
+  - name: UI
+    uniqueID: 1093516665
     locked: 0
