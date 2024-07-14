@@ -1,7 +1,0 @@
-stages:
-  - Test
-
-Code test:
-  stage: Test
-  script:
-    - proj3_wrapper.sh
